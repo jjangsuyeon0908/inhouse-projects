@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+
+<head>
+    <meta name="title" content="CORE" />
+    <meta name="keywords" content="CORE" />
+	<meta name="description" content="CORE" />
+	<meta property="og:type" content="website">
+    <meta property="og:title" content="CORE">
+	<meta property="og:description" content="CORE" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/responsive/css/reset.css">
+    <link rel="stylesheet" href="../css/responsive/css/common.css">
+    <link rel="stylesheet" href="../css/ck_editor.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui-1.9.2.custom.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/table.css" />
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="../js/popup_lib.js"></script>
+    <script src="../js/Util.js"></script>
+	<script src="../js/skrollr.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+
+<body class="fullPage" id="skrollr-body">
+	<!-- open-event -->
+	<div class="open-event">
+
+		<!-- cont01 -->
+		<div class="section cont01 js-cont">
+			<div class="content" id="section01">
+				<div class="inner">
+					<p data-top-top="transform:translateY(0px)" data-center-top="transform:translateY(300px)" data-anchor-target="#section01"><img src="./img/cont01_stu03.jpg" alt="" data-top-top="transform:scale(1.2)" data-center-top="transform:scale(1)" /></p>
+					<p data-top-top="transform:translateY(0px)" data-center-top="transform:translateY(300px)" data-anchor-target="#section01"><img src="./img/cont01_stu02.jpg" alt="" data-top-top="transform:scale(1.2)" data-center-top="transform:scale(1)" /></p>
+					<p data-top-top="transform:translateY(0px)" data-center-top="transform:translateY(300px)" data-anchor-target="#section01"><img src="./img/cont01_stu01.jpg" alt="" data-top-top="transform:scale(1.2)" data-center-top="transform:scale(1)" /></p>
+					<p data-top-top="transform:translateY(0px)" data-center-top="transform:translateY(300px)" data-anchor-target="#section01"><img src="./img/cont01_stu04.jpg" alt="" data-top-top="transform:scale(1.2)" data-center-top="transform:scale(1)" /></p>
+					<p data-top-top="transform:translateY(0px)" data-center-top="transform:translateY(300px)" data-anchor-target="#section01"><img src="./img/cont01_stu05.jpg" alt="" data-top-top="transform:scale(1.2)" data-center-top="transform:scale(1)" /></p>
+					<p data-top-top="transform:translateY(0px)" data-center-top="transform:translateY(300px)" data-anchor-target="#section01"><img src="./img/cont01_stu06.jpg" alt="" data-top-top="transform:scale(1.2)" data-center-top="transform:scale(1)" /></p>
+					<p class="tit"><img src="./img/cont01_tit.png" alt="" /></p>
+					<p class="t-txt"><img src="./img/visual_scroll.png" alt="스크롤다운 마우스" /></p>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+
+				$(window).scroll(function(){
+					var sclTop = $(window).scrollTop()
+					var cont01_top = $('#section01').offset().top;
+					// var cont02_top = $('.cont02').offset().top;
+					var visual_top = $('.visual').offset().top;
+
+					if(sclTop >= cont01_top ){
+						$('#section01 .tit').removeClass('tit-fix02')
+						$('#section01 .tit').addClass('tit-fix')
+					}
+
+					if(sclTop < cont01_top){
+						$('#section01 .tit').removeClass('tit-fix')
+
+					}else if( sclTop >= visual_top - 1000){
+						$('#section01 .tit').removeClass('tit-fix')
+						$('#section01 .tit').addClass('tit-fix02')
+					}
+
+
+					if(sclTop >= 312){
+						$('#section01 .t-txt').addClass('txt-none')
+					}else if( sclTop < 312){
+						$('#section01 .t-txt').removeClass('txt-none')
+					}
+
+					if(sclTop >= visual_top){
+						$('.visual').addClass('ani')
+					}
+
+				})
+
+
+			})
+		</script>
+		<!-- //cont01 -->
+
+		<!-- wrap-visual -->
+		<div class="section visual js-cont">
+			<div class="box01">
+				<div class="box01-wrap">
+					<div class="t-txt">
+						<p style="position: relative;"><img src="./img/visual_txt01.png" alt="검증은 끝났다 bg회색ver" /></p>
+						<p class="t-txt" style="right: 40px; top: 60px;width: 36px;"><img src="./img/visual_txt01_mark.png" alt="느낌표 회색ver" /></p>
+					</div>
+				</div>
+			</div>
+			<div class="box02">
+				<div class="box02-wrap">
+					<div class="t-txt">
+						<p style="position: relative;"><img src="./img/visual_txt02.png" alt="검증은 끝났다 bg파랑ver" /></p>
+						<p class="t-txt" style="right: 40px;top: 60px;width: 36px;"><img src="./img/visual_txt02_mark.png" alt="느낌표 파랑ver" /></p>
+					</div>
+				</div>
+			</div>
+			<div class="box04">
+				<div class="box04-wrap">
+					<ul class="open-list">
+						<li>
+							<img class="black-bg" src="./img/visual_txt04_dgbg.jpg" alt="대구 흑백" />
+							<img class="color-bg" src="./img/visual_txt04_dg.jpg" alt="대구" />
+						</li>
+						<li>
+							<img class="black-bg" src="./img/visual_txt04_wjbg.jpg" alt="원주 흑백" />
+							<img class="color-bg" src="./img/visual_txt04_wj.jpg" alt="원주" />
+						</li>
+						<li>
+							<img class="black-bg" src="./img/visual_txt04_jjbg.jpg" alt="전주 흑백" />
+							<img class="color-bg" src="./img/visual_txt04_jj.jpg" alt="전주" />
+						</li>
+						<li>
+							<img class="black-bg" src="./img/visual_txt04_cwbg.jpg" alt="창원 흑백" />
+							<img class="color-bg" src="./img/visual_txt04_cw.jpg" alt="창원" />
+						</li>
+						<li>
+							<img class="black-bg" src="./img/visual_txt04_cjbg.jpg" alt="청주 흑백" />
+							<img class="color-bg" src="./img/visual_txt04_cj.jpg" alt="청주" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="box05">
+				<div class="box05-wrap">
+					<ul class="open-list">
+						<li>
+							<img class="black-bg" src="./img/box05_list01.jpg" alt="대구 흑백" />
+						</li>
+						<li>
+							<img class="black-bg" src="./img/box05_list02.jpg" alt="원주 흑백" />
+						</li>
+						<li>
+							<img class="black-bg" src="./img/box05_list03.jpg" alt="전주 흑백" />
+						</li>
+						<li>
+							<img class="black-bg" src="./img/box05_list04.jpg" alt="창원 흑백" />
+						</li>
+						<li>
+							<img class="black-bg" src="./img/box05_list05.jpg" alt="청주 흑백" />
+						</li>
+					</ul>
+					<p class="t-txt"><img src="./img/visual_txt05_1.png" alt="2023년 1월, 동시 오픈!" /></p>
+				</div>
+			</div>
+		</div>
+		<!-- //wrap-visual -->
+
+		<!-- cont02 -->
+		<div class="section cont02 js-cont">
+			<div class="inner on">
+				<p class="tit"><img src="./img/cont02_tit.png" alt="개원 첫 해 증명된, 지역의 최상위권이 모이는 러셀CORE"></p>
+				<ul class="ranking">
+					<li>
+						<div class="core core-gj">
+							<div class="top-con">
+								<p><img src="./img/cont02_gj_txt01.png" alt="러셀CORE 광주 2022년 1월 재원생 중"></p>
+								<div class="bar-graph zt-skill-bar">
+									<div class="gray-bar"></div>
+									<div class="blue-bar"></div>
+								</div>
+								<div class="percent">
+									<strong class="count-num" data-count="79"></strong>
+									.
+									<strong class="count-num" data-count="9"></strong>
+									%
+								</div>
+								<p><img src="./img/cont02_gj_txt02.png" alt="HS/서의치 성적 조건*충족"></p>
+							</div>
+							<div class="btm-con">
+								<p><img src="./img/cont02_gj_txt03.png" alt="2022년 전국단위 모의고사 응시한 주요 메이저 학원 기준 전체순위 (31개 지점 중)**"></p>
+								<p><img src="./img/cont02_reverage01.png" alt="평균 5등"></p>
+							</div>
+							<p class="bg-txt">Gwangju</p>
+						</div>
+					</li>
+					<li>
+						<div class="core core-dj">
+							<div class="top-con">
+								<p><img src="./img/cont02_dj_txt01.png" alt="러셀CORE 대전 2022년 1월 재원생 중"></p>
+								<div class="bar-graph zt-skill-bar">
+									<div class="gray-bar"></div>
+									<div class="blue-bar"></div>
+								</div>
+								<div class="percent">
+									<strong class="count-num" data-count="55"></strong>
+									.
+									<strong class="count-num" data-count="7"></strong>
+									%
+								</div>
+								<p><img src="./img/cont02_dj_txt02.png" alt="HS/서의치 성적 조건*충족"></p>
+							</div>
+							<div class="btm-con">
+								<p><img src="./img/cont02_dj_txt03.png" alt="2022년 전국단위 모의고사 응시한 주요 메이저 학원 기준 전체순위 (31개 지점 중)**"></p>
+								<p><img src="./img/cont02_reverage02.png" alt="평균 6등"></p>
+							</div>
+							<p class="bg-txt">Daejeon</p>
+						</div>
+						<ul class="list">
+							<li class="txt-white">※ HS 성적 기준 : 국/수/탐(2) <span>등급합 4</span></li>
+							<li class="txt-white">※ 서의치 성적 기준 : 국/수/영/탐(2)  중 3개 영역 <span>등급합 5</span></li>
+							<li>※※ [광주] THE OOOO 모의고사 기준 , 자연계열 상위 30% 기준 , 3/4/5/7월 평균 순위</li>
+							<li>※※ [대전] THE OOOO 모의고사 기준 , 인문계열 상위 30% 기준 , 3/4/5/7월 평균 순위</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //cont02 -->
+
+		<!-- cont03 -->
+		<div class="section cont03 js-cont">
+			<div class="inner">
+				<p><img src="./img/cont03_tit.png" alt="이제 대한민국이 러셀화 됩니다." /></p>
+				<div class="box-map">
+					<span class="ico"><img src="./img/cont03_ico_jj.png" alt="전주" /></span>
+					<span class="ico"><img src="./img/cont03_ico_cj.png" alt="청주" /></span>
+					<span class="ico"><img src="./img/cont03_ico_wj.png" alt="원주" /></span>
+					<span class="ico"><img src="./img/cont03_ico_cw.png" alt="창원" /></span>
+					<span class="ico"><img src="./img/cont03_ico_dg.png" alt="대구" /></span>
+					<img src="./img/cont03_map.png" alt="" />
+				</div>
+				<p style="margin-top: 65px;"><img src="./img/cont03_stit_1.png" alt="2023년 1월, 대구/원주/전주/창원/청주 동시 오픈" /></p>
+			</div>
+		</div>
+		<!-- //cont03 -->
+
+		<!-- cont04 -->
+		<div class="section cont04 js-cont">
+			<div class="inner">
+				<div class="left-con">
+					<p><img src="./img/cont04_tit.png" alt="학생들이 직접 말하는 러셀CORE" /></p>
+					<div class="video-con">
+						<iframe src='https://tv.naver.com/embed/26953381?autoPlay=false' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='686' HEIGHT='386' allow="encryted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="right-con">
+					<div class="slide-top">
+						<div class="swiper mySwiper review-swiper review01">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide review-swiper-slide">
+								<span class="t-img"><img src="./img/cont04_review04.png" alt="slide_04"></span>
+							  </div>
+							  <div class="swiper-slide review-swiper-slide">
+								<span class="t-img"><img src="./img/cont04_review03.png" alt="slide_03"></span>
+							  </div>
+							  <div class="swiper-slide review-swiper-slide">
+								<span class="t-img"><img src="./img/cont04_review02.png" alt="slide_02"></span>
+							  </div>
+							  <div class="swiper-slide review-swiper-slide">
+								<span class="t-img"><img src="./img/cont04_review01.png" alt="slide_01"></span>
+							  </div>
+							</div>
+						</div>
+
+						<script>
+							var swiper = new Swiper(".review-swiper.review01", {
+								direction: 'vertical',
+								autoplay: {
+									delay: 0,
+									disableOnInteraction: false,
+								},
+								loop:true,
+								loopAdditionalSlides : 1,
+								centeredSlides: true,
+								centeredSlidesBounds: true,
+								speed: 6000,
+								grabCursor: true,
+								slidesPerView: 'auto',
+								freeMode: {
+									enabled: true,
+									momentumBounce:false,
+								},
+
+							});
+						</script>
+					</div>
+					<div class="slide-down">
+						<div class="swiper mySwiper review-swiper review02">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide review-swiper-slide">
+								<span class="t-img"><img src="./img/cont04_review08.png" alt="slide_08"></span>
+							  </div>
+							  <div class="swiper-slide review-swiper-slide">
+								<span class="t-img"><img src="./img/cont04_review07.png" alt="slide_07"></span>
+							  </div>
+							  <div class="swiper-slide review-swiper-slide">
+								<span class="t-img"><img src="./img/cont04_review06.png" alt="slide_06"></span>
+							  </div>
+							  <div class="swiper-slide review-swiper-slide">
+								<span class="t-img"><img src="./img/cont04_review05.png" alt="slide_05"></span>
+							  </div>
+							</div>
+						</div>
+
+						<script>
+							var swiper = new Swiper(".review-swiper.review02", {
+								direction: 'vertical',
+								autoplay: {
+									delay: 0,
+									disableOnInteraction: false,
+									reverseDirection: true,
+								},
+								loop:true,
+								loopAdditionalSlides : 1,
+								centeredSlides: true,
+								centeredSlidesBounds: true,
+								speed: 6000,
+								grabCursor: true,
+								slidesPerView: 'auto',
+								freeMode: {
+									enabled: true,
+									momentumBounce:false
+								},
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //cont04 -->
+
+		<!-- cont05 -->
+		<div class="section cont05 js-cont">
+			<div class="inner">
+				<p class="tit01 mb10"><img src="./img/cont05_tit01.png" alt="러셀학원의 성적향상 메커니즘과 러셀기숙의 관리력의 결합" /></p>
+				<p class="tit02"><img src="./img/cont05_tit02.png" alt="서울 가지 마라! 러셀CORE라면 충분하다" /></p>
+			</div>
+		</div>
+		<!-- //cont05 -->
+
+		<!-- 러셀CORE 학원 문의/상담 안내 -->
+		<!--#include virtual="/event/2022/core_pre/campus_list.asp"-->
+		<!-- //러셀CORE 학원 문의/상담 안내 -->
+	</div>
+	<!-- //open-event -->
+</body>
+</html>
+
+
+
+<script>
+
+	//각 섹션마다 on 붙이기
+	$(function(){
+		var $top = $(".open-event").offset().top;
+		$("html, body").animate({scrollTop:$top},700);
+
+		countBox();
+	})
+
+	function countBox(){
+		$(window).on('scroll', function(){
+			scl();
+		})
+	}
+
+	function scl(){
+		var $cont = $('.js-cont')
+		var winScl	= $(window).scrollTop()
+
+		$cont.each(function(i){
+			var target      = $cont.eq(i);
+			var target_top  = target.offset().top
+
+			if(winScl >= target_top - 100 ){
+				$(this).addClass('on')
+			}
+		})
+	}
+
+	var s = skrollr.init();
+</script>
+
+
+
