@@ -28,16 +28,13 @@
 .final-wrap .visual-wrap .inner {z-index: 1;}
 .final-wrap .visual-area .bg {position:absolute;top:0;left:50%;transform:translateX(-50%);}
 .final-wrap .visual-wrap div > p{text-align: left;}
-
 .final-wrap .visual-wrap .v-tit01 {position: absolute;top: 127px;left: 50%;transform: translateX(-50%);overflow: hidden;}
 .final-wrap .visual-wrap .v-tit01 img {animation: upDown .2s 0.5s both cubic-bezier(.17,.27,.83,.77);}
 .final-wrap .visual-wrap .v-tit02 {position: absolute;top: 220px;left: 204px;z-index: 1;animation: showLeft .2s 0.8s both cubic-bezier(.17,.27,.83,.77);}
 .final-wrap .visual-area .v-tit03 {position: absolute;top: 401px;left: 462px;z-index: 1;animation: showRight .2s 1.1s both cubic-bezier(.17,.27,.83,.77);}
 .final-wrap .visual-wrap .v-tit04 {position: absolute;top: 660px;left: 50%;transform: translateX(-50%);animation:fadeIn ease 1s 1.1s both;}
 .final-wrap .visual-wrap .v-tit04 p {font-size: 24px;color: #fff;font-weight: 600;text-align: center;}
-
 .final-wrap .visual-wrap .v-obj {position: absolute;top: 376px;left: 50%;transform: translateX(80%);animation: rightStretch02 .5s 1.6s both;overflow: hidden;}
-
 .final-wrap .visual-wrap .v-info {position: absolute;top: 767px;left: 50%;transform: translateX(-50%);display: flex;justify-content:flex-start;align-items:flex-start;gap: 60px;animation:fadeIn ease 1s 2.2s both;}
 .final-wrap .visual-wrap .v-info dl {color: #fff;}
 .final-wrap .visual-wrap .v-info dl div {display:flex;align-items:flex-start;}
@@ -93,16 +90,6 @@
 .info-stxt .data-view {z-index: 1; display:none;position:absolute;top:30px;right:0%; width:auto!important;padding:15px 20px;background:#fff;box-shadow:0 3px 2px rgba(0,0,0,.05); text-align: left;line-height: 1.5;font-size: 12px;font-weight:500;color:#AAA;white-space: nowrap;}
 .info-stxt:hover .data-view  {display: block;}
 
-/* 추후 공개 */
-.final-wrap .coming-box {padding:90px 0 !important;width:1200px}
-.final-wrap .coming-box > div {display:flex;justify-content:center;align-items:center;}
-.final-wrap .coming-box .coming-txt {padding-left:48px;color:#8E97AB;font-size:28px;font-weight:700;line-height:40px;text-align:left;letter-spacing:-0.8px}
-.final-wrap .coming-box .coming-txt strong {color:#565E71;font-weight:700;}
-.final-wrap .cont00 .coming-box {background-color:#EEE;border-radius: 15px;border: 0;}
-.final-wrap .coming-box .sms-txt{color: #333; text-align: center; font-size: 24px;font-weight: 500; letter-spacing: -1.2px;margin-top: 48px;}
-.final-wrap .coming-box .btn-black{padding: 0 70px; height: 64px; line-height: 64px; margin-top: 30px;}
-
-
 /* 강사진 */
 .teacher-swiper {padding-top:80px;margin-bottom:40px;overflow:inherit;height:475px;box-sizing:border-box;}
 .teacher-swiper .swiper-wrapper {transition-timing-function:linear !important;}
@@ -155,11 +142,6 @@
 .final-info h3{padding-bottom: 70px;}
 
 
-
-
-
-
-
 /* cont01=========================================================================================================== */
 .cont01 {position:relative;background: #270000;padding: 0 !important;}
 .cont01 .cont01-bg-wrap {background:#270000 url("https://russeldata.megastudy.net/campus/images/russel/intro/2025/final/cont01_bg.jpg") no-repeat 0 0;background-size: cover;background-position: center;height: 870px;box-sizing: border-box;margin: 0 auto;}
@@ -187,7 +169,6 @@
 .result-list li dl dd {margin-top:7px;opacity: 1;}
 .result-list li dl dd strong {font-size:54px;color: var(--key-color); font-weight:800;line-height:1;letter-spacing:-4px;display:inline-block;padding-right:1px;}
 .result-list li dl dd span {color:var(--key-color);font-size:32px;font-weight:500;margin-left:5px;}
-
 
 
 /* cont02=========================================================================================================== */
@@ -219,20 +200,6 @@
 .r-wrap .r-box .r-li ul li {font-size: 18px;word-break: keep-all;padding-left: 10px;}
 .r-wrap .r-box .r-li ul li:not(:first-child) {margin-top: 10px;}
 .r-wrap .r-box .r-li .list-03 li::before {content: '';left: 0;top: 12px;width: 2px;height: 2px;background: var(--key-color-02);}
-
-
-/*인트로 제외한 모든 학원 타입 type02*/
-.r-wrap .r-box.type02 .r-li div {padding: 70px 50px 0;}
-.r-wrap .r-box.type02 .r-li ul {margin: 28px auto 70px;width: fit-content;padding: 0;}
-.r-wrap .r-box.type02 .r-li ul.terms {margin: 44px 0 0;width: fit-content;}
-
-
-
-
-
-
-
-
 
 /*두줄 라인일 경우*/
 .r-wrap.type-two-line {margin-top: 160px;}
