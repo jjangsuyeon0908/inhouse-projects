@@ -1,0 +1,204 @@
+/* ==================================================
+   공통
+================================================== */
+/* 애니메이션 setting */
+.ani {visibility: visible;animation-fill-mode:both!important;}
+
+.top-txt {padding:10px 4%;margin-bottom:-1px;line-height:1.5;text-align: center;font-size:1.2rem;color:#a2a2a2;letter-spacing: -1px;border-bottom:1px solid #eaeaea;background:#fff}
+
+/* 검색 결과 없음 */
+.txt-none {padding:40px 0 30px;text-align:center;}
+
+/* 모바일 이미지 공통 */
+.img img {width:100%;}
+
+.swiper-button-prev:focus, .swiper-button-next:focus {outline: none;}
+
+.board-top {border-bottom:1px solid #222;padding:20px 4%;font-size:1.6rem;color:#222;line-height: 1.5;}
+
+/* ==================================================
+   list-type
+================================================== */
+.info-txt {margin:15px 4% 0}
+.info-txt li {position: relative;padding-left:15px;color:#7e7e7e;font-size:1.2rem!important;line-height: 1.5;}
+.info-txt li::after {content:"※";position: absolute;top:0;left:0;display: block;}
+.info-txt li .blue {font-size:1.2rem;color:#4d5dd7;}
+
+.list-dot {margin:10px 4% 0}
+.list-dot li {position: relative;padding-left:7px;color:#333;font-size:1.2rem;line-height: 1.5;text-align: left;}
+.list-dot li * {font-size:1.2rem;}
+.list-dot li::after {content:"·";position: absolute;top:0;left:0;display: block;font-weight: bold;}
+
+.list-bar li {position: relative;padding-left:11px;color:#333;font-size:1.2rem;line-height: 1.5;text-align: left;}
+.list-bar li * {font-size:1.2rem;text-align: left;}
+.list-bar li::after {content:"-";position: absolute;top:0;left:0;display: block;}
+
+.list-star {margin:10px 0}
+.list-star li {position: relative;padding-left:10px;color:#333;font-size:1.2rem;line-height: 1.5;text-align: left;}
+.list-star li * {font-size:1.2rem;}
+.list-star li::after {content:"*";position: absolute;top:0;left:0;display: block;}
+
+.list-bullet {margin:10px 4% 0}
+.list-bullet li {position: relative;padding-left:15px;color:#333;font-size:1.2rem;line-height: 1.5;text-align: left;}
+.list-bullet li * {font-size:1.2rem;}
+.list-bullet li::after {content:"※";position: absolute;top:0;left:0;display: block;}
+
+.list-base li {color:#333;font-size:1.2rem;line-height: 1.5;text-align: left;}
+.list-base.gray li {color:#7e7e7e;}
+
+
+/* ==================================================
+  모집페이지 타이틀 및 텍스트
+================================================== */
+.recruit-tit {padding:60px 0 25px;font-size:2.4rem;font-weight: bold;line-height: 1.3;letter-spacing: -1px;word-spacing: -2px;text-align: center;}
+.recruit-tit strong {font-size:2.4rem;font-weight: bold;letter-spacing: -1px;word-spacing: -2px;}
+.recruit-stit {position:relative;padding-left:20px;margin:40px 0 10px;font-size: 1.7rem;font-weight: bold;text-align: left;}
+.recruit-stit::before {position: absolute;top:0;left:0;content:"■ "}
+.recruit-tit+.recruit-stit {margin-top: 0;}
+.recruit-stxt {position:relative;margin:30px 0 5px;padding-left:10px;font-size: 1.5rem;font-weight: bold;text-align: left;letter-spacing: -1px;}
+.recruit-stit+.recruit-stxt {margin-top: 0;}
+.recruit-stxt::before {position: absolute;top:0;left:0;content:"· "}
+.recruit-stxt.non-type {padding-left:0;}
+.recruit-stxt.non-type:before {display:none;}
+
+.notice-txt {padding-left: 14px; font-size: 1.4rem;color: #333;text-align: left;font-weight: bold;margin: 10px 0 2px;position: relative;}
+.notice-txt::before {content: '※';display: block;position: absolute;top: 0;left: 0;}
+
+.notice-tit {font-size: 1.4rem;color: #333;text-align: left;font-weight: bold;margin: 25px 0 0;position: relative;}
+
+/* ==================================================
+  Button
+================================================== */
+.bt-gray {display:block;border-radius: 5px;background:#c5c5c5;color:#fff!important;font-weight: bold;height: 50px;border:none;text-align: center;font-size:1.6rem;outline: 0;line-height:50px;width:92%;margin: 10px 4%}
+.bt-gray02 {display:block;border-radius: 5px;font-weight: bold;height: 50px;border:none;text-align: center;font-size:1.6rem;outline: 0;line-height:50px;width:92%;margin: 10px 4%;border:1px solid #363531;background:#363531;color:#fff;;}
+.bt-gray-arr {display:block;position: relative;border-radius: 5px;font-weight: bold;height: 50px;border:none;text-align: center;font-size:1.6rem;outline: 0;line-height:50px;border:1px solid #363531;background:#363531;color:#fff;letter-spacing: -1px}
+.bt-gray-arr::after {content: "";position:absolute;top:50%;right:5%;transform: translateY(-50%) rotate(45deg);display:block;width:9px;height:9px;border-top: 3px solid #fff;border-right: 3px solid #fff}
+.bt-gray-arr * {color: #fff;}
+/* .bt-gray-s {display:inline-block;padding:5px 10px;background:#737373;font-size: 1.3rem;border-radius: 5px;color:#fff;} */
+
+.bt-blue a, .bt-blue input {border-radius: 5px;background:#0081ff;color:#fff;height: 50px;border:none;text-align: center;font-size:1.8rem;font-family:'맑은 고딕','malgun gothic', '돋움', 'dotum';outline: 0;line-height:50px;display:inline-block;font-weight: bold;}
+.btn-blue {height:30px;line-height:30px;border:1px solid #0081ff;background:#0081ff;color:#fff;}
+
+.bt-line-gray a, .bt-line-gray input {border-radius: 5px;background:#fff;color:#111;font-weight: bold;height: 40px;border:1px solid #ccc;text-align: center;font-size:1.54rem;font-family:'맑은 고딕','malgun gothic', '돋움', 'dotum';line-height:40px;display:inline-block;}
+
+.bt-w100 a, .bt-w100 input {display: block;width:100%!important;}
+
+.bt-sev {display: flex;}
+.bt-sev a, .bt-sev input {flex: 1;margin:0 5px}
+.bt-sev a:first-child, .bt-sev input:first-child {margin-left:0}
+.bt-sev a:last-child, .bt-sev input:last-child {margin-right:0}
+
+.bt-detail {text-decoration:underline;color:#999}
+
+.bt-blue a .ico {display:inline-block;width:14px;height:11px;background:url("http://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_btn_check.png") no-repeat;background-size:100%;}
+
+.bt-more-wrap {padding-bottom:40px;margin-bottom:-60px;background:#f2f2f2;}
+.bt-more-text {display:block;width:100%;font-size:1.5rem;color:#7e7e7e;text-align: center;background:#fff;padding:15px 0;border-top:1px solid #eaeaea;border-bottom:1px solid #eaeaea;}
+.bt-more-text::before {content:"+"}
+.bt-more-text span {color:#7e7e7e;}
+
+.bt-text-w {display:block;width:100%;font-size:1.4rem;color:#7e7e7e;text-align: center;background:#fff;padding:15px 0;border-top:1px solid #eaeaea;border-bottom:1px solid #eaeaea;}
+
+.bt-link {text-align: center;}
+.bt-link a {position:relative;padding-right:11px;margin-right:5px;font-size:1.4rem;color:#7e7e7e;}
+.bt-link a u {color:#7e7e7e;font-size:1.4rem;text-decoration: none;border-bottom:1px solid #7e7e7e;}
+.bt-link a::after {content: "|";position: absolute;top:0;right:0;font-size:1.2rem}
+.bt-link a:last-child {padding:0;margin:0}
+.bt-link a:last-child::after {display: none;margin-right:0;padding-right: 0;}
+
+.btn-wide {display:block;margin:10px 4% 0 4%;padding:1rem 0;font-size:1.7rem;text-align:center;border-radius: 3px;font-weight: bold;}
+.btn-wide .btn-wide-bullet {width:14px;height:11px;vertical-align: middle;margin-top:-2px;}
+.btn-wide img {margin-top:-2px;}
+
+
+/*전화걸기 버튼*/
+.bt-tel {padding-left: 4%; display:block;height:50px;line-height:50px;margin:20px 4% 0;text-align: center;background:#fff;font-size:1.8rem;color:#0179ee;font-weight: 600;border: 1px solid #0179ee;border-radius: 5px;}
+.bt-tel span {position: relative;}
+.bt-tel span::after {position: absolute;top: -3px;left: -30px;display: block;content: '';width: 31px;height: 31px;background:url('http://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_tel02.png') center/50% no-repeat;}
+/*//전화걸기 버튼*/
+
+/*PC페이지로 이동 버튼*/
+.bt-pc {display:block;height:50px;line-height:50px;margin:20px 4%;text-align: center;background:#f3f3f3;font-size:1.8rem;color:#9a9c9f;border-radius: 5px;font-weight: 600;}
+.bt-pc.telBtm {margin: 10px 4% 20px;}
+/*//PC페이지로 이동 버튼*/
+
+/*모집안내 원서접수 바로가기 버튼*/
+.btn-link {display: block;position: relative;height: 45px;line-height: 45px;background-color: #383838;border-radius: 5px;color: #fff!important;font-size: 1.5rem;font-weight: bold;text-align: center;}
+.btn-link::after {position: absolute;top: 17px;right: 15px;display: block;content: '';width: 9px;height: 9px; border-top: 2px solid #fff;border-right: 2px solid #fff;transform: rotate(45deg);}
+/*//모집안내 원서접수 바로가기 버튼*/
+
+/*모집안내 온라인 상담 등 바로가기 버튼*/
+.bt-gray-s {position:relative;display:inline-block;width:auto;padding:3px 25px 3px 12px;vertical-align:top;background:#636363;border-radius:5px;font-size:13px;font-weight:400;color:#fff;text-decoration: none!important;word-spacing:-1px}
+.bt-gray-s::after{content:'';position:absolute;top:50%;right:12px;display:block;width:7px;height:7px;border-top:1px solid #fff;border-right:1px solid #fff;transform:translateY(-50.1%) rotate(45deg);}
+/*//모집안내 온라인 상담 등 바로가기 버튼*/
+
+/* 결제 고정 버튼 */
+.fix-bt-wrap {height:50px;padding:20px 0}
+.fix-bt-wrap.bg-wh {background:#fff}
+.fix-bt-wrap .fix-btn {width:92%;position: relative;bottom:0;left:4%;z-index: 7}
+.fix-bt-wrap .fix-btn.on {position: fixed;bottom:22px;}
+/* //결제 고정 버튼 */
+
+
+/* 버튼 2개 */
+.bt-box-02 {display: flex;justify-content: center;}
+.bt-box-02 a {border-radius:5px;height:50px;line-height:50px;text-align: center;font-size: 1.8rem;color:#fff;}
+.bt-box-02 .bt-g {background:#c5c5c5;font-weight:bold;}
+.bt-box-02 .bt-b {margin-left:10px;background:#0081ff;font-weight:bold;}
+/* //버튼 2개 */
+
+.bt-w94 a {display: block;width:92%;margin:0 4%}
+
+/* 하단 NEXT 버튼 */
+.bt-next {position: relative;margin-top:25px;background:#fff}
+.bt-next .txt-next {position:absolute;top:50%;left:6%;transform:translateY(-50%);height:50px;width:50px;line-height:50px;}
+.bt-next .txt-next::before {content:"";display:block;position:absolute;top:-12%;left:-8%;width:120%;height:120%;background:#cee5ff;opacity:1;box-shadow:0px 3px 5px rgba(48, 48, 48, .2);z-index:1;border-radius:50%;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 2s infinite;}
+.bt-next .txt-next::after {content:"";display:block;position:absolute;top:-26%;left:-23%;width:150%;height:150%;background:#ddedff;opacity:.4;box-shadow:0px 3px 5px rgba(48, 48, 48, .2);z-index:0;border-radius:50%;visibility:visible;animation-fill-mode: both;animation: btShadowBg ease-in-out 2s .3s infinite;}
+.bt-next .txt-next span {display: block;position:relative;margin-top:-1px;width:100%;height:100%;border-radius: 100%;background:#fff;border:1px solid #d6e8fb;text-align:center;color:#007df6;z-index:1;animation: btShadow ease-in-out 2s infinite;}
+.bt-next a {display:block;text-align: right;padding:15px 5%;border-top:1px solid #ddd;border-bottom:1px solid #ddd;font-size:1.4rem;font-weight:bold;letter-spacing:-1px}
+.bt-next a::after {content:"";display:inline-block;margin-left:5px;width:8px;height:8px;border-top:1px solid #2e2e2e;border-right:1px solid #2e2e2e;transform:rotate(45deg) translateX(-1px)}
+/* //하단 NEXT 버튼 */
+
+/* ==================================================================
+	ICON
+===================================================================== */
+/******** 마감 아이콘 : 위치 속성 인라인스타일 OR 각 풀페이지 관련 CSS에 추가 *********/
+.ico-deadline {position:absolute;left:50%;padding:15px 7%;background:#fff;border:4px solid #d12525;box-shadow: 10px 10px 10px rgba(0,0,0,0.1);text-align: center;z-index:3;transform: rotate(-15deg) translateX(-50%);}
+.ico-deadline::after {display:block;position: absolute;top:4px;left:4px;width:calc(100% - 10px);height:calc(100% - 10px);content:"";border:1px solid #d12525;}
+.ico-deadline div {position:relative;padding-top:0!important;color: #222;background:none!important;line-height: 1.2;font-size:1.6rem;white-space:pre}
+.ico-deadline div strong {display:block;color: #d12525;font-size:2rem;font-weight: 800;letter-spacing: -2px;white-space:nowrap;}
+/* 작은사이즈 */
+.ico-deadline.type02 {padding:7px 5%;border-width: 3px;}
+.ico-deadline.type02.sm {padding:7px 3%;border-width: 3px;}
+.ico-deadline.type02 div {font-size: 1.3rem;}
+.ico-deadline.type02 div strong {font-size: 1.4rem;}
+/* 컬러변경 */
+.ico-deadline.ico-blue {border-color:#003ade;}
+.ico-deadline.ico-blue::after {border-color:#003ade;}
+.ico-deadline.ico-blue div strong {color:#003ade;}
+
+
+/******** 마감 아이콘 : 20230208 디자인 교체 *********/
+/* 모집안내 테이블 상단 */
+.ico-end {position:absolute;top:100px;right:10%;width:125px;height:76px;background:url('http://russeldata.megastudy.net/campus/images/russel/m_russel/common/bg_end_sq.png') left top no-repeat;background-size:100% 100%;text-align: center;}
+.ico-end p {position:absolute;top:50%;left:3px;width:100%;font-size: 1.2rem;font-weight: bold;transform:rotate(-15deg) translateY(-50%);color:#e31e24;font-weight: bold;}
+.ico-end p strong {font-size: 1.4rem;color:#e31e24;font-weight: bold;}
+
+/* 모집안내 고정 메뉴 말풍선 */
+.ico-end-b {position:absolute;top:-20px;right:7%;width:108px;height:40px;background:url('http://russeldata.megastudy.net/campus/images/russel/m_russel/common/bg_end_balloon.png') left top no-repeat;background-size: 100% 100%;color: #fff!important;font-size: 1.2rem!important;line-height: 2.5;}
+
+
+/* 테이블 내부 아이콘 */
+.ico-end-s {display:inline-block;min-width:40px;;margin-top:5px;padding:3px;font-size:1.1rem!important;color:#e31e24;text-align: center;line-height: 1.5;border:2px solid #e31e24;border-radius: 3px;letter-spacing: -1px!important;}
+.ico-end-s.type02 {color:#092bfd;border-color:#092bfd;}
+
+
+/* 비주얼 내 마감 아이콘 */
+.visual-ico-end {position:absolute;top:73vw;right:6vw;background:url('http://russeldata.megastudy.net/campus/images/russel/m_russel/common/bg_end_round.png') left top no-repeat;background-size:100%;width:24vw;height:19vw;}
+.visual-ico-end.red {position:absolute;top:73vw;right:6vw;background:url('http://russeldata.megastudy.net/campus/images/russel/m_russel/common/bg_end_round_w.png') left top no-repeat;background-size:100%;width:24vw;height:19vw;}
+.visual-ico-end span {color:#fff;font-weight:bold;transform:rotate(15deg);display:inline-block;padding-top:7vw;padding-left:1.5vw;width:23vw;text-align:center;font-size:4vw;}
+.visual-ico-end span.red {color:#e31e24;}
+
+/* 테이블 내 말풍선 */
+.ico-end-balloon {position:relative;font-size:0 !important;}
+.ico-end-balloon:after {content:'';position:absolute;top:0;left:50%;width:54px;height:28px;background:url('http://russeldata.megastudy.net/campus/images/russel/m_russel/common/ico_balloon.gif') left top no-repeat;transform:translateX(-50%);background-size:100%;}

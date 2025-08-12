@@ -1,0 +1,107 @@
+.lecturer-wrap.sub-wrap {padding: 0;}
+.lecturer-wrap img {width:100%}
+.lecturer-wrap .visual-wrap {position:relative;overflow:hidden;height: 127vw;}
+.lecturer-wrap .visual {position: relative;background: url("./img/visual_bg.jpg") no-repeat 0 0;height: inherit;background-size: cover;}
+.lecturer-wrap .visual .inner {width: 83.4vw;height: 100vw;position: absolute;top: 13.8vw;left: 8vw;}
+.lecturer-wrap .visual .v-info {position:relative;}
+.lecturer-wrap .visual .v-info .tit {position: absolute;}
+.lecturer-wrap .visual .v-info .tit.tit01 {top: 14vw;left: 27vw;overflow: hidden;width: calc(245vw / 7.2);}
+.lecturer-wrap .visual .v-info .tit.tit01 img {animation: fadeUp .5s 1s ease-in-out both;}
+.lecturer-wrap .visual .v-info .tit.tit02 {top: 27vw;left: 10vw;overflow: hidden;width: calc(487vw / 7.2);}
+.lecturer-wrap .visual .v-info .tit.tit02 img {animation: fadeUp .5s 1s ease-in-out both;}
+.lecturer-wrap .visual .v-info .tit.tit03 {top: 42vw;left: 8vw;overflow: hidden;width: calc(497vw / 7.2);}
+.lecturer-wrap .visual .v-info .tit.tit03 img {animation: fadeUp .5s 1s ease-in-out both;}
+.lecturer-wrap .visual .v-info .tit.tit04 {top: 51vw;left: 17vw;animation: scale .5s 1.8s ease-in-out both;width: calc(392vw / 7.2);}
+.lecturer-wrap .visual .v-info .tit.tit05 {top: 78vw;left: 24vw;overflow: hidden;width: calc(304vw / 7.2);}
+.lecturer-wrap .visual .v-info .tit.tit05 img {animation: fadeLeft 1s 2s ease-in-out both;}
+
+.lecturer-wrap .cont-wrap {position:relative;background:#FFF;}
+.lecturer-wrap .cont-wrap .inner {padding: 60px 5%}
+.lecturer-wrap .cont-wrap .inner > p:nth-child(1) {width: calc(350vw / 7.2);margin: 0 auto;}
+.lecturer-wrap .cont-wrap .tit-box {display: flex;justify-content: center;margin: 10px 0 30px;}
+.lecturer-wrap .cont-wrap .tit-box p:nth-child(1) {margin: 18px 5px 0 0;overflow: hidden;width: calc(257vw / 7.2);}
+.lecturer-wrap .cont-wrap .tit-box p:nth-child(2) {animation: blink 1s step-end infinite;width: calc(295vw / 7.2);}
+
+.lecturer-wrap .cont-wrap .teacher-wrap {display:flex;justify-content:center;}
+.lecturer-wrap .cont-wrap .teacher-wrap .box-wrap {width: calc(100% - 3vw);display: flex;flex-wrap: wrap;gap: 3vw;justify-content: space-between;}
+.lecturer-wrap .cont-wrap .teacher-wrap *[class^="t-box"] {display:inline-block;width:calc(50% - 1.6vw);box-sizing: border-box;}
+
+.lecturer-wrap .cont-wrap .btnbox {border-radius:4px;background:#1e1e1e}
+.lecturer-wrap .cont-wrap .btn {position: relative;display:block;height:50px;line-height:50px;margin-top:25px;padding-right:27px;text-align:center;color:#FFF;font-size:1.3rem;font-weight:bold;letter-spacing:-1.4px;}
+.lecturer-wrap .cont-wrap .btn:after {content: '';position:absolute;top:20px;right:18vw;width: 8px;height:8px;transform:rotate(45deg);border-right:1px solid #FFF;border-top:1px solid #FFF}
+
+/* ·¹ÀÌ¾îÆË¾÷ */
+.lecturer-wrap .layer-wrap {z-index:12;display:none;position:fixed;top:45%;transform:translateY(-40%);left:5.5%;width:89vw;border-radius:15px;background:#FFF;}
+.lecturer-wrap .layer-swiper {position:relative;overflow:hidden;}
+.lecturer-wrap .layer-wrap.on {display:block}
+.lecturer-wrap .layer-wrap .inner {position:relative;padding:10vw 9% 25vw}
+.lecturer-wrap .layer-wrap .bt-close-tt {z-index:15;position:absolute;top:15px;right:15px;width:3.62vw}
+.lecturer-wrap .layer-wrap .img {margin-right: 20px; position:relative;width: 25vw;height: 34vw;background: url("./img/kor_won.png") no-repeat 0 0;background-size: contain;}
+.lecturer-wrap .layer-wrap .img img {position: absolute;bottom: 0;left: 54%;transform: translateX(-50%);width: 135%;}
+.lecturer-wrap .layer-wrap .t-info {overflow-y:scroll;height:100vw;padding:0 5px}
+.lecturer-wrap .layer-wrap .t-info .tit {margin: 12px 0 10px; font-size:1.4rem;font-weight:bold;letter-spacing:-1.5px;}
+.lecturer-wrap .layer-wrap .list-dot {margin:0;padding-bottom:11px;border-bottom:1px solid #dadada}
+.lecturer-wrap .layer-wrap .list-dot:last-child {padding-bottom:0;border-bottom:none}
+.lecturer-wrap .layer-wrap .list-dot li {font-size:1.3rem;letter-spacing:-1.3px;line-height:20px;color: #222222;}
+.lecturer-wrap .layer-wrap .list-dot li span {color: #4444d5;font-weight: 700;}
+.lecturer-wrap .layer-wrap .list-dot p {font-size:1.1rem;}
+.lecturer-wrap .layer-wrap .list-dot li::after {content: '-';}
+.lecturer-wrap .layer-wrap .t-box {display: flex;}
+.lecturer-wrap .layer-wrap .t-box .text-wrap {display: flex;flex-direction: column;justify-content: center;width: 51vw;}
+.lecturer-wrap .layer-wrap .t-box .text-wrap .m-tit {font-size: 1.6rem;color: #4b87e4;font-weight: 700;letter-spacing: -1px;}
+.lecturer-wrap .layer-wrap .t-box .text-wrap .t-name {font-size: 1.6rem;color: #222222;line-height: 1;margin: 15px 0 12px;}
+.lecturer-wrap .layer-wrap .t-box .text-wrap .t-name b {font-weight: 800;margin-right: 5px;}
+.lecturer-wrap .layer-wrap .t-box .text-wrap .grade {box-sizing: border-box; background: #f2f2f2;border-radius: 6px;font-size: 1.2rem;color: #5c5c5c;padding: 11px 4vw 10px 8vw;position: relative;letter-spacing: -2px;width: 100%;max-width: calc(100% - 4vw);}
+.lecturer-wrap .layer-wrap .t-box .text-wrap .grade::after {width: 19px;height: 15px;position: absolute;top: 11px;left: 10px; display: block;content: '';background: url("./img/ico_grade.png") no-repeat 0 0;background-size: contain;}
+.lecturer-wrap .layer-wrap .t-box .text-wrap .grade b {color: #222222;font-weight: 700;}
+
+.lecturer-wrap .layer-wrap .tbl-type01 {border-top: 0px;}
+.lecturer-wrap .layer-wrap .tbl-type01 tbody tr th {background: #bababa;color: #fff;font-size: 1.3rem;font-weight: bold;border-bottom: 1px solid #fff;}
+.lecturer-wrap .layer-wrap .tbl-type01 tbody tr td {background: #f2f2f2;color: #222222;font-size: 1.3rem;font-weight: bold;border-bottom: 1px solid #fff;}
+
+.lecturer-wrap .dim {z-index:11;display:none;position:fixed;top:0;left:0;width:100%;height:100%;opacity:0.6;background:#000}
+.lecturer-wrap .dim.on {display:block}
+
+.lecturer-wrap .layer-wrap .slide-btn {z-index:1;position:absolute;left:50%;bottom:7vw;display:flex;justify-content:center;align-items:center;padding-top:8%;transform:translateX(-50%);}
+.lecturer-wrap .swiper-button-next {position:relative;top:0;width:80px;height:40px;margin-top:0;margin-left:28px;border:1px solid #dbdbdb;background:none;}
+.lecturer-wrap .swiper-button-next::before {content: '';position:absolute;top:6px;left:50%;height:8px;transform:translate(-50%, 50%) rotate(-45deg);border-right:2px solid #353535;border-bottom:1px solid #353535}
+.lecturer-wrap .swiper-button-next::after {content: '';position:absolute;top:12px;left:50%;height:8px;transform:translate(-50%, 50%) rotate(45deg);border-right:2px solid #353535;border-top:1px solid #353535}
+.lecturer-wrap .swiper-button-prev {position:relative;top:0;width:80px;height:40px;margin-top:0;margin-right:28px;border:1px solid #dbdbdb;background:none;}
+.lecturer-wrap .swiper-button-prev::before {content: '';position:absolute;top:6px;left:50%;height:8px;transform:translate(-50%, 50%) rotate(45deg);border-right:2px solid #353535;border-bottom:1px solid #353535}
+.lecturer-wrap .swiper-button-prev::after {content: '';position:absolute;top:12px;left:50%;height:8px;transform:translate(-50%, 50%) rotate(-45deg);border-right:2px solid #353535;border-top:1px solid #353535}
+.lecturer-wrap .swiper-pagination {position:relative;bottom:0;width:50px;color:#bdbdbd;font-size:1.2rem;font-weight:700;letter-spacing:-1.6px;}
+.lecturer-wrap .swiper-pagination .swiper-pagination-current {color:#222;letter-spacing:-1.3px;}
+
+.lecturer-wrap .layer-wrap .swiper-slide.math .img {background: url("./img/math_won.png") no-repeat 0 0;background-size: contain;}
+.lecturer-wrap .layer-wrap .swiper-slide.math .m-tit {color: #db80b9;}
+
+.lecturer-wrap .layer-wrap .swiper-slide.eng .img {background: url("./img/eng_won.png") no-repeat 0 0;background-size: contain;}
+.lecturer-wrap .layer-wrap .swiper-slide.eng .m-tit {color: #ccab8b;}
+
+.lecturer-wrap .layer-wrap .swiper-slide.sci .img {background: url("./img/sci_won.png") no-repeat 0 0;background-size: contain;}
+.lecturer-wrap .layer-wrap .swiper-slide.sci .m-tit {color: #b8a9e1;}
+
+/* animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+      }
+}
+
+@keyframes fadeUp {
+    0% {transform: translateY(80px);}
+
+    100% {transform: translateY(0px);}
+}
+
+@keyframes fadeLeft {
+    0% {transform: translateX(-600px);}
+
+    100% {transform: translateX(0px);}
+}
+
+@keyframes scale {
+    0% {transform: scale(1.5);opacity: 0;}
+
+    100% {transform: scale(1);opacity: 1;}
+}
